@@ -1,6 +1,6 @@
 # pet_project_earthquake
 pet_project_earthquake
 
-'''bash
+```bash
 python -m venv venv
-'''
+```
