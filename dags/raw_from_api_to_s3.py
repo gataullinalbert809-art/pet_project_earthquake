@@ -27,7 +27,7 @@ SHORT_DESCRIPTION = "SHORT DESCRIPTION"
 
 args = {
     "owner": OWNER,
-    "start_date": pendulum.datetime(2025, 5, 1, tz="Europe/Moscow"),
+    "start_date": pendulum.datetime(2026, 10, 1, tz="Europe/Moscow"),
     "catchup": True,
     "retries": 3,
     "retry_delay": pendulum.duration(hours=1),
@@ -87,7 +87,7 @@ with DAG(
         task_id="start",
     )
 
-    get_and_transfer_api_data_to_S3 = PythonOperator(
+    get_and_transfer_api_data_to_s3 = PythonOperator(
         task_id="get_and_transfer_api_data_to_s3",
         python_callable=get_and_transfer_api_data_to_s3,
     )
